@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<body>
+
+    <head>
+        <title>e-portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    </head>
+
+    <div id="container">
+        <div id="topper">
+            <a href="index.html" class="nav2">Home</a>
+            <a href="u1.html" class="nav2">Unit 1</a>
+            <a href="u2.html" class="nav2">Unit 2</a>
+            <a href="u3.html" class="nav2">Unit 3</a>
+        </div>
+
+        <div id="header"></div>
+
+        <div id="content">
+
+            <ul class="tab">
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '1st Topic')"
+                        id="defaultOpen">1st Topic</a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '2nd Topic')">2nd Topic</a>
+                </li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '3rd Topic')">3rd Topic</a>
+                </li>
+            </ul>
+
+
+
+            <div id="1st Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>EULERIAN AND HAMILTONIAN PATHS</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        An Eulerian path is a path in a graph that traverses each edge exactly once, while a Hamiltonian
+                        path is a path that visits every vertex exactly once. At a theoretical level, Eulerian and
+                        Hamiltonian paths reveal fundamental properties of graphs
+                        and connectivity. They showcase the relationships between vertices and edges, shedding light on
+                        graph structures and properties. By analyzing these paths, me, as an computer science student
+                        gain insights
+                        into the connectivity of networks, the presence of cycles, and the efficiency of traversal
+                        algorithms. <br><br>
+
+                        Real-world applications of Eulerian and Hamiltonian paths abound, particularly in the field of
+                        network analysis. For example, in transportation networks, Eulerian paths are essential for
+                        optimizing routes, ensuring efficient delivery systems, and minimizing resource utilization.
+                        Hamiltonian paths find use in areas like circuit design, DNA sequencing, and robotics path
+                        planning, where visiting all points efficiently is crucial. <br><br>
+
+                        Moreover, reflecting upon Eulerian and Hamiltonian paths invites consideration of related
+                        concepts such as graph theory, connectivity, and optimization. These paths serve as building
+                        blocks for more advanced graph algorithms, highlighting the interconnected nature of various
+                        concepts within computer science. <br><br>
+
+                        Furthermore, the study of Eulerian and Hamiltonian paths encourages contemplation of the
+                        limitations and constraints imposed by these concepts. The existence and complexity of Eulerian
+                        and Hamiltonian paths depend on the characteristics of the underlying graph, such as its degree
+                        distribution and connectivity. Thoughtful consideration of these limitations prompts exploration
+                        of approximations, heuristics, and algorithmic adaptations to address real-world scenarios where
+                        exact solutions may not be feasible.
+                    </font>
+                </i>
+            </div>
+
+            <div id="2nd Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>SHORT PATHS</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        The study of shortest paths revolves around finding the most efficient routes or
+                        paths between vertices in a graph. Reflecting upon shortest paths prompts a deeper exploration
+                        of various algorithms, such as Dijkstra's algorithm, which play
+                        key roles in determining the optimal path lengths and routes. <br><br>
+
+                        Real-world applications of shortest paths are abundant, spanning numerous domains within
+                        computer science. In transportation and logistics, shortest path algorithms are utilized to
+                        optimize delivery routes, minimize travel time, and reduce resource consumption. In networking,
+                        these algorithms assist in routing packets efficiently across the internet, ensuring data
+                        reaches its destination with minimal delay. Furthermore, shortest paths find applications in
+                        robotics path planning, network design, social network analysis, and even DNA sequencing.
+                        Reflecting on these applications allows computer scientists to appreciate the practical
+                        significance of shortest paths and their impact on real-world systems.
+                    </font>
+                </i>
+            </div>
+
+            <div id="3rd Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>GRAPH COLORING</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        Graph coloring aims to assign colors to the vertices of a graph in such a way that
+                        no two adjacent vertices share the same color. Reflecting upon graph coloring prompts a deeper
+                        exploration of various coloring algorithms, such as the greedy coloring algorithm and
+                        backtracking algorithms, which play key roles in determining efficient coloring solutions.
+                        <br><br>
+
+                        From a theoretical standpoint, graph coloring unveils fundamental properties of graphs, such as
+                        chromatic numbers, coloring limits, and the relationships between vertices. Furthermore, the
+                        study of graph coloring contributes to the broader field
+                        of graph theory, shedding light on topics like graph optimization, coloring conjectures, and the
+                        four-color theorem. <br><br>
+
+                        In scheduling and timetabling, graph coloring algorithms assist in assigning time slots
+                        to events or resources in a way that avoids conflicts. In register allocation for compilers,
+                        graph coloring techniques aid in assigning hardware resources to variables to optimize memory
+                        usage and execution time. Additionally, graph coloring finds applications in wireless channel
+                        assignment, frequency allocation in telecommunications, and even in map coloring for
+                        cartography. Reflecting on these applications allows us to appreciate the
+                        practical significance of graph coloring and its impact on various computational systems.
+                    </font>
+                </i>
+            </div>
+
+            <br><br><br>
+
+            <div id="cube2">
+                <center>
+                    <h1>UNIT 3</h1>
+                    <br>
+                    <b>
+                        <font size="3">
+                            Unit 3 will encompass an exploration of fundamental topics such as the Euclerian and
+                            Hamiltonian
+                            Paths,
+                            Short Paths, and Graph Coloring.
+                            <br>
+                        </font>
+                    </b>
+                </center>
+
+                <script>
+                    function openSwtab(evt, SwtabName) {
+                        // Declare all variables
+                        var i, tabcontent, tablinks;
+
+                        // Get all elements with class="tabcontent" and hide them
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+
+                        // Get all elements with class="tablinks" and remove the class "active"
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i].className.replace(" active", "");
+                        }
+
+                        // Show the current tab, and add an "active" class to the link that opened the tab
+                        document.getElementById(SwtabName).style.display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+
+                    // Get the element with id="defaultOpen" and click on it
+                    document.getElementById("defaultOpen").click();
+
+
+                </script>
+</body>
+
+</html>

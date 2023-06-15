@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<body>
+
+    <head>
+        <title>e-portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    </head>
+
+    <div id="container">
+        <div id="topper">
+            <a href="index.html" class="nav2">Home</a>
+            <a href="u1.html" class="nav2">Unit 1</a>
+            <a href="u2.html" class="nav2">Unit 2</a>
+            <a href="u3.html" class="nav2">Unit 3</a>
+        </div>
+
+        <div id="header"></div>
+
+        <div id="content">
+
+            <ul class="tab">
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '1st Topic')"
+                        id="defaultOpen">1st Topic</a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '2nd Topic')">2nd Topic</a>
+                </li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '3rd Topic')">3rd Topic</a>
+                </li>
+            </ul>
+
+
+
+            <div id="1st Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>BAYES THEOREM</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        At its core, Bayes' Theorem provides a mathematical framework for updating and refining
+                        probabilities based on new evidence or information. It establishes a relationship between
+                        conditional probabilities, enabling the estimation of the likelihood of an event occurring given
+                        prior knowledge. The theorem takes into account both the prior probability and the conditional
+                        probability to calculate the posterior probability, which represents the updated probability
+                        after considering new evidence. <br><br>
+
+                        Reflecting on Bayes' Theorem from a theoretical perspective reveals its role in various areas of
+                        computer science. One notable application lies in machine learning and artificial intelligence,
+                        particularly in probabilistic modeling. Bayes' Theorem serves as the foundation for Bayesian
+                        inference, which enables the estimation of unknown variables based on observed data. <br><br>
+
+                        Additionally, Bayes' Theorem fosters a broader perspective on the philosophical underpinnings of
+                        probabilistic reasoning. It challenges us to contemplate the nature of
+                        uncertainty, causality, and the nature of knowledge itself. By incorporating Bayesian
+                        principles, computer scientists can approach problems with a more nuanced understanding,
+                        acknowledging the limitations of data and the role of prior beliefs.
+                    </font>
+                </i>
+            </div>
+
+            <div id="2nd Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>PROBABILITY THEORY</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        Probability theory deals with the study of uncertainty and
+                        randomness. It provides a framework for quantifying and analyzing the likelihood of events
+                        occurring. In computer science, it is particularly important for modeling and
+                        analyzing systems that involve randomness, such as algorithms, simulations, machine learning,
+                        and data analysis. <br><br>
+
+                        It allows us to consider the ethical and
+                        societal implications of probabilistic reasoning and decision-making. It raises questions about
+                        fairness, bias, and the responsible use of probabilistic models and algorithms. Deep
+                        consideration of these aspects encourages the development of transparent, accountable, and
+                        unbiased computational systems that uphold ethical principles. <br><br>
+
+                        Probability theory challenges us to critically evaluate the
+                        limitations of probabilistic models and the assumptions underlying them. By exploring these
+                        philosophical dimensions, we can gain a more comprehensive understanding of
+                        uncertainty and enhance our ability to reason and make decisions in complex
+                        scenarios. <br><br>
+
+                        In conclusion, by understanding and applying probability theory,
+                        we can make informed decisions when working with uncertain or random
+                        data, assess the performance of algorithms in probabilistic settings, and develop robust and
+                        reliable systems.
+                    </font>
+                </i>
+            </div>
+
+            <div id="3rd Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>EXPECTED VALUE AND VARIANCE</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        Expected value is a fundamental concept that represents the average value or outcome of a random
+                        variable. It quantifies the long-term behavior or expected result of an uncertain event. In
+                        computer science, expected value plays a crucial role in probabilistic modeling, optimization,
+                        decision-making, and performance analysis. <br><br>
+
+                        Practically, expected value finds applications in various areas of computer science.
+                        Expected value is used to assess the quality of probabilistic predictions and guide
+                        decision-making processes. Variance, on the other hand, quantifies the spread or variability of
+                        a random variable around
+                        its expected value. It measures the degree to which data points deviate from the average.
+                        Variance is an essential concept in understanding and analyzing uncertainty, risk, and
+                        optimization. <br><br>
+
+                        Studying variance helps me understand how outcomes can differ from the expected value. Variance
+                        is used in probability, statistics, and machine learning to measure uncertainty and the spread
+                        of data. By understanding variance, I can analyze and model random events better and create
+                        algorithms that can handle and respond to different levels of variability.
+                    </font>
+                </i>
+            </div>
+
+            <br><br><br>
+
+            <div id="cube2">
+                <center>
+                    <center>
+                        <h1>UNIT 2</h1>
+                        <br>
+                        <b>
+                            <font size="3">
+                                Unit 2 will encompass an exploration of fundamental topics such as the Bayes of Theorem,
+                                Probability Theory, and Expected Value and Variance.
+                                <br>
+                            </font>
+                        </b>
+                    </center>
+                    <script>
+                        function openSwtab(evt, SwtabName) {
+                            // Declare all variables
+                            var i, tabcontent, tablinks;
+
+                            // Get all elements with class="tabcontent" and hide them
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Get all elements with class="tablinks" and remove the class "active"
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+
+                            // Show the current tab, and add an "active" class to the link that opened the tab
+                            document.getElementById(SwtabName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+
+
+                    </script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<body>
+
+    <head>
+        <title>e-portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    </head>
+
+    <div id="container">
+        <div id="topper">
+            <a href="index.html" class="nav2">Home</a>
+            <a href="u1.html" class="nav2">Unit 1</a>
+            <a href="u2.html" class="nav2">Unit 2</a>
+            <a href="u3.html" class="nav2">Unit 3</a>
+        </div>
+
+        <div id="header"></div>
+
+        <div id="content">
+
+            <ul class="tab">
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '1st Topic')"
+                        id="defaultOpen">1st Topic</a></li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '2nd Topic')">2nd Topic</a>
+                </li>
+                <li><a href="javascript:void(0)" class="tablinks" onclick="openSwtab(event, '3rd Topic')">3rd Topic</a>
+                </li>
+            </ul>
+
+
+
+            <div id="1st Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>BASICS OF COUNTING</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        The Basics of Counting is a fundamental concept in the field of Discrete Mathematics, which
+                        holds great significance in the realm of Computer Science. This topic delves into the principles
+                        and techniques used to quantify and enumerate objects or events within a given context. <br><br>
+
+                        This revolves around understanding and applying various counting
+                        principles, such as the rule of sum and the rule of product. These principles provide a
+                        systematic approach to determining the number of possibilities or outcomes in a given scenario.
+                        <br><br>
+
+                        Upon reflection, the study of the Basics of Counting prompts a deeper contemplation of the
+                        intricate nature of problem-solving in Computer Science as counting serves as a fundamental
+                        building block for tasks such as generating permutations and combinations.
+                        These concepts are vital in numerous areas of computer science, including cryptography, network
+                        analysis, and data mining. They enable the exploration and manipulation of data sets, providing valuable insights and
+                        facilitating decision-making processes. <br><br>
+
+                        From a higher-level perspective, counting plays a crucial role in analyzing the efficiency of
+                        algorithms and evaluating their performance. The ability to accurately count and quantify
+                        various elements allows us to make informed decisions about data structures, algorithm
+                        design, and optimization strategies. <br><br>
+
+                        Moreover, the Basics of Counting fosters a mindset of precision and attention to detail, both of
+                        which are essential traits for successful computer scientists. It trains individuals to analyze
+                        problems systematically, break them down into manageable components, and apply appropriate
+                        counting techniques to arrive at accurate solutions.
+                    </font>
+                </i>
+            </div>
+
+            <div id="2nd Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>PIGEON HOLE</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        The Pigeonhole Principle asserts that if you distribute a larger number of
+                        objects into a smaller number of containers, at least one container must contain more than one
+                        object. While seemingly straightforward, this principle carries profound implications and
+                        warrants a deep and thoughtful exploration from multiple perspectives. <br><br>
+
+                        From a theoretical standpoint, the Pigeonhole Principle provides a powerful tool for proving the
+                        existence of certain patterns or phenomena. It helps establish the bounds
+                        and limitations of algorithms, data structures, and computational systems. By analyzing the
+                        distribution of objects and containers, we can deduce critical insights about
+                        the behavior and efficiency of algorithms. <br><br>
+
+                        Moreover, the Pigeonhole Principle nurtures a mindset of creativity and innovation. It
+                        will challenge us to think beyond conventional solutions and seek alternative
+                        approaches to problem-solving. By recognizing the inevitability of certain outcomes due to the
+                        principle, new perspectives emerge, leading to the development of novel algorithms, data
+                        structures, and computational paradigms.<br><br>
+
+                        In conclusion, by embracing this principle, computer scientists can navigate the complexities
+                        of computational systems and devise efficient, secure, and innovative solutions.
+                    </font>
+                </i>
+            </div>
+
+            <div id="3rd Topic" class="tabcontent">
+                <br>
+                <font size="4"><b>PERMUTATIONS AND COMBINATIONS</b></font>
+                <br><br>
+                <i>
+                    <font size="3">
+                        Permutations and combinations deal with the arrangement and selection of objects.
+                        Permutations focus on the ordering of elements, while combinations emphasize the selection of
+                        subsets without regard to order. <br><br>
+
+                        Permutations and combinations play a crucial role in the realm of cryptography, a
+                        field deeply intertwined with computer science. Permutations are utilized in the generation of
+                        cryptographic keys, where the order and arrangement of characters or bits can significantly
+                        impact the security of the system. Combinations, on the other hand, are employed in tasks like
+                        password cracking, where subsets of characters are tried systematically to gain unauthorized
+                        access. A thoughtful consideration of permutations and combinations in this context raises
+                        questions about the strength and vulnerability of cryptographic systems, leading to innovative
+                        approaches for encryption and decryption. <br><br>
+
+                        In conclusion, the study of permutations and combinations encompasses
+                        theoretical foundations, practical applications, security implications, algorithmic complexity,
+                        and optimization strategies. By embracing the intricacies of permutations and combinations,
+                        we can uncover innovative solutions, enhance computational systems, and address
+                        the complex challenges present in various domains of computer science.
+                    </font>
+                </i>
+            </div>
+
+            <br><br><br>
+
+            <div id="cube2">
+                <center>
+                    <center>
+                        <h1>UNIT 1</h1>
+                        <br>
+                        <b>
+                        <font size="3">
+                            Unit 1 will encompass an exploration of fundamental topics such as the Basics of Counting,
+                            Pigeon Hole Principle, and Permutations and Combinations.
+                            <br>
+                        </font>
+                        </b>
+                    </center>
+
+                    <script>
+                        function openSwtab(evt, SwtabName) {
+                            // Declare all variables
+                            var i, tabcontent, tablinks;
+
+                            // Get all elements with class="tabcontent" and hide them
+                            tabcontent = document.getElementsByClassName("tabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+
+                            // Get all elements with class="tablinks" and remove the class "active"
+                            tablinks = document.getElementsByClassName("tablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+
+                            // Show the current tab, and add an "active" class to the link that opened the tab
+                            document.getElementById(SwtabName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+
+
+                    </script>
+</body>
+
+</html>
